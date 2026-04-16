@@ -59,6 +59,8 @@ nav.scrolled{background:rgba(250,247,242,.96);backdrop-filter:blur(16px);padding
 .hero-quote{margin-top:48px;padding:24px 28px;border-left:3px solid var(--gold);background:rgba(201,169,110,.07);border-radius:0 8px 8px 0;opacity:0;animation:up .9s .8s forwards}
 .hero-quote p{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:17px;line-height:1.6;color:var(--plum-mid)}
 .hero-quote cite{display:block;margin-top:10px;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);font-style:normal}
+/* small status badge for portfolio items */
+.badge{display:inline-block;background:var(--rose);color:var(--cream);font-size:11px;padding:4px 8px;border-radius:999px;margin-left:10px;letter-spacing:.12em;text-transform:uppercase}
 @keyframes up{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
 @keyframes fromleft{from{opacity:0;transform:translateX(24px)}to{opacity:1;transform:translateX(0)}}
 .marquee-strip{background:var(--rose);overflow:hidden;padding:16px 0}
@@ -240,7 +242,7 @@ footer{background:var(--plum);padding:52px 60px;display:flex;align-items:center;
     <div class="founder-badge">
       <div class="fname">Sebolelo Hlabi</div>
       <div class="frole">Founder &amp; Director</div>
-      <div class="fnote">Named for my little girl, Zizo 💜</div>
+    
     </div>
   </div>
   <div class="hero-right">
@@ -251,7 +253,7 @@ footer{background:var(--plum);padding:52px 60px;display:flex;align-items:center;
       <li><span class="svc-num">03</span><span class="svc-name">Business Email</span><span class="svc-arrow">↗</span></li>
     </ul>
     <div class="hero-quote">
-      <p>"This studio carries the name of my little girl — a reminder that everything we build is about creating a better future, one website at a time."</p>
+      <p>"ZizoStudio was born from a vision to create meaningful digital solutions that contribute to a better future, one project at a time."</p>
       <cite>— Sebolelo Hlabi, Founder</cite>
     </div>
   </div>
@@ -269,7 +271,7 @@ footer{background:var(--plum);padding:52px 60px;display:flex;align-items:center;
         <div class="about-mono">S</div>
         <div class="about-name">Sebolelo Hlabi</div>
         <div class="about-sub">Founder · Creative Director</div>
-        <div class="about-dedication">"For my daughter Zizo —<br>this studio is yours too."</div>
+        <div class="about-dedication">"Zizo — a quiet reminder of why we create."<br>this studio is yours too."</div>
       </div>
     </div>
     <div class="float-a"><div class="fl-label">Est.</div><div class="fl-val">2026</div></div>
@@ -300,10 +302,15 @@ footer{background:var(--plum);padding:52px 60px;display:flex;align-items:center;
       <h3>Website Development</h3>
       <p>Custom-designed websites that are as beautiful as they are effective — built to attract, engage, and convert your ideal clients.</p>
       <ul><li>Custom UI &amp; Brand Design</li><li>Mobile-First, Fully Responsive</li><li>E-commerce &amp; Client Portals</li><li>CMS &amp; Blog Integration</li><li>Search Engine Optimisation</li></ul>
-    </div>
-    <div class="svc-card reveal">
-      <div class="svc-big-num">02</div>
-      <div class="svc-icon-wrap">☁️</div>
+      <div class="hero-quote">
+        <p>Selected projects I’ve built:</p>
+        <ul>
+          <li><a href="https://ndlovukazifsc.co.za/" target="_blank" rel="noopener">ndlovukazifsc.co.za</a></li>
+          <li><a href="https://minemhlophe.vercel.app/" target="_blank" rel="noopener">minemlhophe.vercel.app</a><span class="badge">In progress</span></li>
+          <li><a href="https://akili-timber-redux.vercel.app/" target="_blank" rel="noopener">akili-timber-redux.vercel.app</a><span class="badge">In progress</span></li>
+        </ul>
+        <cite>— Sebolelo Hlabi, Founder</cite>
+      </div>
       <h3>Web Hosting</h3>
       <p>Reliable, secure, high-performance hosting that keeps your website live and lightning-fast, 24 hours a day, every day of the year.</p>
       <ul><li>99.9% Uptime Guarantee</li><li>SSL Security Certificates</li><li>Daily Automated Backups</li><li>Global CDN Delivery</li><li>Around-the-Clock Monitoring</li></ul>
@@ -343,8 +350,8 @@ footer{background:var(--plum);padding:52px 60px;display:flex;align-items:center;
   </div>
   <div class="pricing-grid">
     <div class="price-card reveal">
-      <div class="plan-tier">Starter</div><div class="price-amount">R2,999</div>
-      <div class="price-period">Once-off build + R299/mo hosting</div><div class="price-hr"></div>
+      <div class="plan-tier">Starter</div><div class="price-amount">R3,500</div>
+      <div class="price-period">Once-off build + R200/mo hosting</div><div class="price-hr"></div>
       <ul class="price-list">
         <li class="y">Up to 5 Pages</li><li class="y">Mobile Responsive Design</li><li class="y">1 Business Email Address</li><li class="y">SSL Security Certificate</li><li class="y">Basic SEO Setup</li><li class="n">Blog / CMS</li><li class="n">E-commerce</li>
       </ul>
@@ -352,8 +359,8 @@ footer{background:var(--plum);padding:52px 60px;display:flex;align-items:center;
     </div>
     <div class="price-card feat reveal">
       <div class="pop-tag">Most Popular</div>
-      <div class="plan-tier">Business</div><div class="price-amount">R7,999</div>
-      <div class="price-period">Once-off build + R499/mo hosting</div><div class="price-hr"></div>
+      <div class="plan-tier">Business</div><div class="price-amount">R6,999</div>
+      <div class="price-period">Once-off build + R399/mo hosting</div><div class="price-hr"></div>
       <ul class="price-list">
         <li class="y">Up to 15 Pages</li><li class="y">Mobile Responsive Design</li><li class="y">5 Business Email Addresses</li><li class="y">SSL + Daily Cloud Backups</li><li class="y">Full SEO Optimisation</li><li class="y">Blog / CMS Integration</li><li class="n">Custom Web Application</li>
       </ul>
@@ -375,17 +382,17 @@ footer{background:var(--plum);padding:52px 60px;display:flex;align-items:center;
       <h2>Let's Build Something <em>Beautiful Together</em></h2>
       <p>Tell us about your vision. We will get back to you within 48 hours with a tailored proposal designed around your goals and budget.</p>
       <div class="cdetails">
-        <a href="mailto:hello@zizostudio.co.za" class="cdetail"><span class="cdetail-ico">✉️</span>hello@zizostudio.co.za</a>
-        <a href="tel:+27310000000" class="cdetail"><span class="cdetail-ico">📞</span>+27 (0)31 000 0000</a>
+        <a href="mailto:seboleloh@zizostudio.co.za" class="cdetail"><span class="cdetail-ico">✉️</span>seboleloh@zizostudio.co.za</a>
+        <a href="tel:+27761635370" class="cdetail"><span class="cdetail-ico">📞</span>+27 (0)76135370</a>
         <a href="#" class="cdetail"><span class="cdetail-ico">📍</span>Durban, KwaZulu-Natal</a>
       </div>
     </div>
     <form class="cform reveal" onsubmit="handleForm(event)">
       <div class="crow">
-        <div class="cfield"><label>First Name</label><input type="text" placeholder="Thembi" required></div>
-        <div class="cfield"><label>Last Name</label><input type="text" placeholder="Nkosi"></div>
+        <div class="cfield"><label>First Name</label><input type="text" placeholder="Sebolelo" required></div>
+        <div class="cfield"><label>Last Name</label><input type="text" placeholder="Hlabi"></div>
       </div>
-      <div class="cfield"><label>Email Address</label><input type="email" placeholder="thembi@yourbrand.co.za" required></div>
+      <div class="cfield"><label>Email Address</label><input type="email" placeholder="seboleloh@zizostudio.co.za" required></div>
       <div class="cfield"><label>I Need Help With</label>
         <select><option value="">Select a service...</option><option>Website Development</option><option>Web Hosting</option><option>Business Email</option><option>Full Package — Website + Hosting + Email</option><option>Not sure yet — let's talk</option></select>
       </div>
@@ -400,7 +407,7 @@ footer{background:var(--plum);padding:52px 60px;display:flex;align-items:center;
   <p>Every great digital journey starts with a single conversation.</p>
   <div class="cta-btns">
     <a href="#contact" class="btn-plum">Start a Project</a>
-    <a href="tel:+27310000000" class="btn-ghost-plum">Call Us Today</a>
+    <a href="tel:+27761635370" class="btn-ghost-plum">Call Us Today</a>
   </div>
 </section>
 <footer>
@@ -408,7 +415,7 @@ footer{background:var(--plum);padding:52px 60px;display:flex;align-items:center;
   <ul class="footer-nav">
     <li><a href="#services">Services</a></li><li><a href="#about">Our Story</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#contact">Contact</a></li><li><a href="#">Privacy</a></li>
   </ul>
-  <div class="footer-copy">© 2026 Zizo Studio Pty Ltd<br>Named for <span>Zizo</span> 💜</div>
+  <div class="footer-copy">© 2025 Zizo Studio Pty Ltd<br>Named for <span>Zizo</span> 💜</div>
 </footer>
 <script>
 const nav=document.getElementById('nav');
